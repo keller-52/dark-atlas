@@ -1,0 +1,26 @@
+; Dark Atlas playable research prototype
+config_version=5
+
+[application]
+config/name="残光图志 · 墨线实验"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+config/icon="res://assets/icon.svg"
+
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/size/window_width_override=1600
+window/size/window_height_override=1000
+window/size/min_width=1100
+window/size/min_height=688
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.035, 0.065, 0.10, 1)
+
+[gui]
+theme/default_font_multichannel_signed_distance_field=true
